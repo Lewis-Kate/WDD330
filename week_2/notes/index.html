@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Week 2 Notes</title>
+    <meta name="Week 2 Notes" content="Week 2 Notes">
+</head>
+    
+<body>
+<h1>Week 2</h1>
+    
+    <p>Programming Basics - JavaScript</p>
+        <li>// this is a short comment</li>
+        <li>/* This is a longer comment<br>
+            anything here will be ignored<br>
+            This is a useful place to put notes*/</li>
+        <li> good practice to write comments in your code</li>
+        <li>syntax used by JavaScript is known as a C-style syntax </li>
+        <li>Automatic Semicolon Insertion (ASI), can be error-prone</li>
+        <li>Best Practice: <br>
+            const message = 'Hello World!';<br>
+            alert(message);</li>
+        <li>Primitive Data Types: string, symbol, number, boolean, undefined, null</li>
+        <li>Operand: operator applies an operation to a value</li>
+        <li> special operator called typeof for finding out the type of a value</li>
+        <li>const is used when the variable will not be reassigned to another value</li>
+        <li>let is used if the variable might be reassigned later in the program</li>
+        <li>block scoped: their value only exists inside the block they are declared in</li>
+        <li>global scope: Any variable declared outside of a block</li>
+        <li>local scope: variables defined inside a block using the let or const will only be available inside that block and not be accessible outside of that block</li>
+        <li>Constant and variable names are case sensitive</li>
+        <li>Camel case starts with a lowercase letter and then each new word is capitalized</li>
+        <li>Underscore separates each new word with an underscore</li>
+        <li>A method is an action that a primitive data type or object can perform</li>
+        <li>Template literals: special types of string that were introduced in ES6,backtick character, ` , to deliminate the string, expression can be inserted inside a string and the result will be displayed</li>
+        <li>Symbols are the only primitives that don't have a literal form. The only way to create them is to use the Symbol() function</li>
+        <li>Numbers can beintegers(whole numbers, such as 3) orfloating point numbers(often referred to as just 'decimals' or 'floats', such as 3.14159)</li>
+        <li>Hexadecimal or "hex" numbers are often used for color codes on the Web.</li>
+        <li>If a number starts with a zero, followed by the letter o , then it is considered to be in octal (base 8) notation</li>
+        <li> If a number starts with a zero, followed by the letter b then it is considered to be in binary (base 2) notation</li>
+        <li>Non-primitive data types, such as arrays, functions and objects, all have a type of 'object'</li>
+        <li>Boolean values are either true or false</li>
+        <li>Logical operators can be used to check if compound statements are true or false</li>
+    
+    <p>Arrays, Logic, and Loops</p>
+        <li>An array is an ordered list of values</li>
+        <li>Destructuringan array is the concept of taking values out of an array and presenting them as individual values</li>
+        <li>The length property can be used as part of the index to find the last item in an array</li>
+        <li>pop() - to remove the last item from an array</li>
+        <li>shift()- to remove the first item from an array</li>
+        <li>push() - appends a new value to the end of an array</li>
+        <li>unshift() - appends a new item to the beginning of an array</li>
+        <li>concat() - used to merge an array with one or more arrays</li>
+        <li>join() - used to turn array into a string that comprises all items in the array, separated by commas</li>
+        <li>slice() - creates a subarray, chopping a slice of the original array</li>
+        <li>splice() - removes items from an array and inserts new items in their place</li>
+        <li>reverse() - permanently reverses the order of the array</li>
+        <li>sort() - sort the order of the array</li>
+        <li>multidimensional array - array of arrays</li>
+        <li>Sets: ata structure that represents a collection of unique values, so it cannot include any duplicate values</li>
+        <li>Maps are new in ES6 and are ordered lists of key-value pairs</li>
+        <li>We can use an if and else statement to control the flow of code</li>
+        <li>The switch statement can be used instead of multiple if and else statements</li>
+        <li>A while loop and do ... while loop can be used to repeat a block of code while a condition is still true</li>
+        <li>A for loop works in a similar way to a while loop, but has a different syntax</li>
+        <li>A for-of loop can be used to iterate over an array</li>
+        <li>Sets and maps are enumerable, so can also be looped over using a for-of loop</li>
+    
+    <p>Functions</p>
+        <li>To define a function literal we can use a function declaration</li>
+        <li>Another way of defining a function literal is to create a function expression</li>
+        <li>A function can also be declared using the constructor Function()</li>
+        <li>If you have assigned a function to a variable, you need to place parentheses after the variable to invoke it as a function</li>
+        <li>All functions return a value, which can be specified using the return statement, which comes after the return keyword</li>
+        <li>any parameters a function needs are set when the function isdefined</li>
+        <li>When a function isinvoked, it is provided with arguments</li>
+        <li>Arrow functions can be identified by the 'arrow' symbol, => that gives them their name</li>
+        <li>Arrow functions are always anonymous, so if you want to refer to them, you must assign them to a variable</li>
+        <li>callback - A function that is passed as an argument to another</li>
+        <li>forEach() - loop through the array and invoke a callback function using each value as an argument</li>
+        <li>map() - it returns a new array that replaces each value with the return value of the callback function</li>
+        <li>reduce() - cumulatively combines each result to return just a single value</li>
+        <li>filter() - returns a new array that only contains items from the original array that return true when passed to the callback</li>
+            <p>Arrow functions have a number of advantages over other ways of declaring functions</p>
+                <li>They are much less verbose than normal function declarations</li>
+                <li>Single parameters don't need putting into parentheses</li>
+                <li>The body of the function doesn't need placing inside a block if it's only one line</li>
+                <li>The return keyword isn't required if the return statement is the only statement in the body of the function</li>
+                <li>They don't bind their own value of this to the function</li>
+    
+    
+</body>
+</html>
