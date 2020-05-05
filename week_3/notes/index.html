@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Week 3 Notes</title>
+    <meta name="week 3 notes" content="week 3 notes">
+</head>
+    
+    <body>
+    
+    <h1>Week 3</h1>
+            <p>Object methods, "this"</p>
+                <li>A function that is the property of an object is called its method</li>
+                <li>sayHi() : same as "sayHi: function()"</li>
+                <li>To access the object, a method can use the this keyword</li>    
+                <li>The value of this is the object “before dot”, the one used to call the method</li>
+                <li>"this" can be used in any function</li>
+                <li>The value of this is defined at run-time</li>
+                <li>When a function is declared, it may use this, but that this has no value until the function is called</li>
+        
+        <p>This in Javascript</p>
+            <li>When you create a new instance of an object with the new keyword, this refers to the instance</li>
+            <li>this within any method refers to the object itself</li>
+            <li>Since this refers to the object, you can use methods to get the instance of an object</li>
+            <li>this in an arrow function is always the same as this around it</li>
+        
+        <p>Objects</p>
+                <li>An object literal is an object that is created directly in the language by wrapping all its properties and methods in curly braces {}</li>
+                <li>object literals: distingushing feature of javascript, quickly create objects, no need for defining class</li>
+                <li>mutable: properties or methods can be changed or removed </li>
+                <li> short ES6 way - const ironMan = { name, realName };</li>
+                <li>'in' operator can be used to check whether an object has a particular property</li>
+                <li>hasOwnProperty() - to check whether an object has a property that is its own</li>
+                <li>for in - loop through all of an object’s properties and methods</li>
+                <li>Object.values() - returns an array of all the object's value</li>
+                <li>Object.entries() - returns an array of key-value pairs</li>
+                <li>New properties and methods can be added to objects at any time in a program</li>
+                <li>never rely on the properties being in a certain order</li>
+                <li> change the value of an object’s properties at any time using assignment</li>
+                <li>Any property can be removed from an object using the delete operator</li>
+                <li>objects are assigned byreference,  if a variable is assigned to an object that already exists, it will simply point to the exact same space in memory</li>
+                <li>object literal pattern - creating an object literal that serves as the namespace, then adding any values as properties of that object, and any functions as methods</li>
+                <li>JavaScript Object Notation, or JSON</li>
+                <li>JSON is a string representation of the object literal notation</li>
+                <li>The parse() method takes a string of data in JSON format and returns a JavaScript object</li>
+                <li>The stringify() method does the opposite, taking a JavaScript object and returning a string of JSON data</li>
+                <li>All the properties and methods of the Math object are immutable and unable to be changed</li>
+                <li>Math object has eight properties that represent a mix of commonly used math constants. Note that they are all named in capital letters</li>
+                <li>Math.PI // The ratio of the circumference and diameter of a circle</li>
+                <li>Math.SQRT2 // The square root of 2</li>
+                <li>Math.SQRT1_2 // The reciprocal of the square root of 2</li>
+                <li>Math.E // Euler's constant</li>
+                <li>Math.LN2 // The natural logarithm of 2</li>
+                <li>Math.LN10 // The natural logarithm of 10</li>
+                <li>Math.LOG2E // Log base 2 of Euler's constant</li>
+                <li>Math.LOG10E // Log base 10 of Euler's constant</li>
+                <li>Math.abs() method returns the absolute value of a number</li>
+                <li>Math.ceil() method will round a numberupto the next integer, or remain the same if it is already an integer</li>
+                <li>Math.floor() method will round a numberdownto the next integer, or remain the same if it is already an integer</li>
+                <li>Math.round() method will round a number to thenearestinteger</li>
+                <li>Math.trunc() method that returns the integer-part of a number – that is, it gets truncated at the decimal point</li>
+                <li>Math.exp() method will raise a number to the power of Euler’s constant</li>
+                <li>Math.pow() method will raise any number (the first argument) to the power of another number (the second argument)</li>
+                <li>Math.sqrt() method returns the positive square root of a number</li>
+                <li>Math.cbrt() method was introduced in ES6, which returns the cube root of numbers</li>
+                <li>Math.hypot() method was also introduced in ES6. It returns the square root of the sum of the squares of all its arguments</li>
+                <li>Math.log() method returns the natural logarithm of a number</li>
+                <li>Math.max() method returns the maximum number from its arguments</li>
+                <li>Math.min() method unsurprisingly returns the minimum number from the given arguments</li>
+                <li>Math.sin() returns the sine of an angle</li>
+                <li>Math.cos() returns the cosine of an angle</li>
+                <li>Math.tan() returns the tangent of an angle</li>
+                <li>Math.asin() returns the arcsine of a number</li>
+                <li>Math.acos() returns the arccosine of a number</li>
+                <li>Math.atan() returns the arctangent of a number</li>
+                <li>The Math.random() method is used to create random numbers, which can be very useful when writing programs</li>
+        
+                
+                <ul>Accessing Properties</ul>
+                    <li>superman.name // dot notation</li>
+                    <li>superman['name'] // brackets</li>
+                    <li>superman["real" + " " + "name"] // the property is built using string concatenation</li>
+        
+        <p>Document Object Model - DOM</p>
+                <li>an HTML document as a network of connected nodes that form a tree-like structure</li>
+                <li>everything on the webpage is a node</li>
+                <li>All nodes have a numerical code to signify what type they are</li>
+                <li>Node lists are array-like objects, but they are not arrays</li>
+                <li>getElementById() - reference to the element with a unique id attribute </li>
+                <li>getElementsByTagName() - return a live node list of all the elements with the tag name that is provided as an argument</li>
+                <li>getElementsByClassName() - live node list of all elements that have the class name that is supplied as an argument</li>
+                <li> document.querySelector() - use CSS notation to find thefirstelement in the document that matches that matches a CSS selector provided as an argument</li>
+                <li>document.querySelectorAll() - uses CSS notation but returns a node list ofallthe elements in the document that match the CSS query selector</li>
+                <li>jQuery is a popular JavaScript framework that makes it very easy to find elements on a page using a CSS-style syntax</li>   
+                <li>childNodes property is a list of all the nodes that are children of the node concerned</li>
+                <li>children property only returns anyelementnodes that are children of that node</li>
+                <li>firstChild property returns the first child of a node</li>
+                <li>lastChild property returns the last child of a node</li>
+                <li>parentNode property returns the parent node of an element</li>
+                <li>nextSibling property returns the next adjacent node of the same parent</li>
+                <li>previousSibling property returns the previous adjacent node</li>
+                <li>createElement() method that takes a tag name as a parameter and returns that element</li>
+                <li>CSS can be updated - CamelCase notation</li>
+                <li>style property -  see what CSS styles have been set on an element</li>
+              
+    </body>
+</html>
