@@ -102,6 +102,27 @@
                 <li>createElement() method that takes a tag name as a parameter and returns that element</li>
                 <li>CSS can be updated - CamelCase notation</li>
                 <li>style property -  see what CSS styles have been set on an element</li>
-              
+        
+        <p>Events</p>
+                <li>click event occurs when a user clicks with the mouse, presses the Enter key, or taps the screen, making it a very useful all-round event covering many types of interaction</li>
+                <li>addEventListener() method is called on a node object, the node to which the event listener is being applied</li>
+                <li>document.body.addEventListener('click',doSomething);</li>
+                <li>screenX and screenY properties show the number of pixels from the left and top of the screen respectively where the event took place</li>
+                <li>clientX and clientY properties show the number of pixels from the left and top of the client that is being used</li>
+                <li> pageX and pageY properties show the number of pixels from the left and top, respectively, where the event took place in the document</li>
+                <li>You should be very cautious of attaching both a click and doubleclick event to the same element</li>
+                <li>mousedown and mouseup events</li>
+                <li>hree events that occur when a user presses a key are: keydown , keypress and keyup</li>
+                <li>modifier keys such asShift,Ctrl,Altandmeta(Cmdon Mac)</li>
+                <li>touchstart event occurs when a user initially touches the surface</li>
+                <li>touchend event occurs when a user stops touching the surface</li>
+                <li>touchmove event occurs after a user has touched the screen then moves around without leaving</li>
+                <li>touchenter event occurs when a user has already started touching the surface, but then passes over the element to which the event listener is attached</li>
+                <li>touchleave event occurs when the user is still touching the surface, but leaves the element to which the event listener is attached</li>
+                <li>touchcancel event occurs when a touch event is interrupted, such as a user’s finger moving outside the document window, or too many fingers being used at once</li>
+                <li>There are no 'swipe' events. These need to be created by using a combination of touchstart , touchmove , and touchleave events that monitor the distance and direction moved from start to finish of a touch event</li>
+                <li>An event listener can be removed using the removeEventListener() method</li>
+                <li>preventDefault() is a method of the event object that can be used inside the callback function to stop the default behavior happening</li>
+                <li>each event object has a property called cancellable that returns false if it cannot be prevented</li>
     </body>
 </html>
