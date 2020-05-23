@@ -53,3 +53,5 @@ function newItem() {
     }
   }
 }
+
+//Filter by complete or not complete
