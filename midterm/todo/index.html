@@ -3,13 +3,15 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
+    
 <body>
-
+<div class="content">
 <div id="head" class="header">
-  <h2>To Do List</h2>
+  <h1>To Do List</h1>
   <input type="text" id="add" placeholder="Add Item...">
-  <span onclick="newItem()" class="addBtn">Add</span>
+  <span onclick="newItem()" class="addBtn">Add To List</span>
 </div>
 
 <ul id="list">
@@ -21,11 +23,14 @@
   <li>Make Dinner</li>
 </ul>
 
-<script>
 
-</script>
-<script src='todo.js'></script>
-
+<footer>
+    <p>All</p>
+    <p>Active</p>
+    <p>Completed</p>
+</footer>
+        </div>
 </body>
+    <script src='todo.js'></script>
 </html>
 
