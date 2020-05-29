@@ -147,3 +147,21 @@ footer p{
     font-weight: bold;
     font-size: 1.2em;
 }
+
+footer span{
+  padding: 7px;
+  width: 20%;
+  background: lightgray;
+  color: white;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 1em;
+}
+
+footer span:hover {
+  background-color: darkgray;
+}
+}
