@@ -1,3 +1,9 @@
+
+//Creates toDoList array
+let toDoList =[];
+
+
+
 // Create a "close" button and append it to each list item
 let Nodelist = document.getElementsByTagName("LI");
 var i;
@@ -52,6 +58,34 @@ function newItem() {
       div.style.display = "none";
     }
   }
+    let item = {id:new Date().getTime, task:inputValue, completed:false};
+    toDoList.push(item);
 }
 
-//Filter by complete or not complete
+
+// Store
+localStorage.setItem("inputValue", "toDoList");
+
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("toDoList");
+
+
+//Filter by complete tasks 
+function complete(){
+  const result = toDoList.filter(item => item.completed == true);
+  
+  }
+
+//Active tasks 
+function active(){
+   const result = toDoList.filter(item => item.completed != true);  
+}
+
+
+//All tasks 
+function allTasks(){
+   const result = toDoList;  
+}
+
+
+
