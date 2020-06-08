@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Week 8 Notes</title>
+    <meta name="Week 8 Notes" content="Week 8 Notes Index">
+    <link rel="stylesheet" href="../../main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1>Week 8 Notes</h1>
+    <p>Transforms and Transitions</p>
+        <li>transform property lets you lets you translate, rotate, scale, and/or skew any element on the page</li>
+        <li>Transforms don’t work on inline elements, just add display: inline-block;</li>
+        <li>rotate() function rotates an element around the point of origin by a specified angle value</li>
+        <li>skew(x,y) function specifies a skew along the x and y axes</li>
+        <li>transform-origin:  control the origin from which your transforms are applied</li>
+        <li>The order of transform functions does matter</li>
+        <li>transition-property property defines the CSS properties of the element that should be transitioned</li>
+        <li>transition-duration property sets how long the transition will take</li>
+        <li>transition-timing-function lets you control the pace of the transition in even more granular detail</li>
+        <li>A keyframe is a snapshot that defines a starting or end point of any smooth transition</li>
+    
+
+    <p>Canvas, SVG, and Drag and Drop</p>
+        <h3>Why would I need to use canvas? </h3>
+        <li>Radians are a unit used to measure angles, and the symbol π denotes a measurement in radians</li>
+        <li>draggable isnota Boolean attribute</li>
+    
+        
+    <p>Transition Example</p>
+    <div class="container"><div class="orbiting-circle"></div></div><br>
+    
+<p>SVG Example</p>    
+ <svg width="300" height="400">
+  <!--define pattern-->
+  <defs>
+ <pattern id="pattern2" x="0" y="0" width="20" height="20"           patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="10" fill="red"/>
+      <circle cx="8" cy="8" r="10" fill="yellow"/>
+      <circle class="cir" cx="4" cy="4" r="6" fill="orange" />
+  </pattern>
+  </defs>
+  <!--use pattern in a rectangle-->
+  <rect fill="url(#pattern2)" width="180" height="252" class="rectangle2"/>
+ </svg>
+
+
+ <div class="home"><a href="../../index.html">Home</a></div>
+    
+    
+</body>
+</html>
