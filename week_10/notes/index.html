@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Week 10 Notes</title>
+    <meta name="Week 10 Notes" content="Week 10 Notes Index">
+    <link rel="stylesheet" href="../../main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1>Week 10 Notes</h1>
+    <p>Client-side form validation Example</p>
+    <p>Form validation 1</p>
+    <form>
+      <h2>Enter your support query</h2>
+      <ul>
+        <li>
+          <label for="uname">User name:</label>
+          <input type="text" name="uname" id="uname" required minlength="5" maxlength="20">
+        </li>
+        <li>
+          <label for="email">Email address:</label>
+          <input type="email" name="email" id="email" required maxlength="200">
+        </li>
+        <li>
+          <label for="phone">Phone number:</label>
+          <input type="number" name="phone" id="phone" required maxlength="15">
+        </li>
+        <li>
+          <label for="comment">Comment:</label>
+          <textarea name="comment" id="comment">
+          </textarea>
+        </li>
+        <li>
+          <button>Submit comment</button>
+        </li>
+      </ul>
+    </form>
+    
+    <p>Using Fetch</p>
+    <li>basic fetch request: <br>
+    fetch('http://example.com/movies.json')<br>
+  .then(response => response.json())<br>
+  .then(data => console.log(data));<br></li>
+    <li>Use fetch() to POST JSON-encoded data</li>
+    <li>Files can be uploaded using an HTML <input type="file" /> input element, FormData() and fetch().</li>
+    <li>headers objects have a guard property</li>
+    <li>Response instances are returned when fetch() promises are resolved</li>
+    <li>there is a Fetch Polyfill available that recreates the functionality for non-supporting browsers</li><br>
+
+    
+ <div class="home"><a href="../../index.html">Home</a></div>
+    
+    
+</body>
+</html>
