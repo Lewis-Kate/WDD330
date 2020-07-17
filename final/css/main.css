@@ -105,7 +105,6 @@ button:hover {
   color: red;
 }
 
-/*Image transition and transform*/
 .imgContainer {
   display: flex;
   flex-flow: column nowrap;
