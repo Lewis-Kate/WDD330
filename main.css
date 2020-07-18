@@ -26,8 +26,8 @@ h3{
 p{
     color: fuchsia;
     font-weight: bold;
-    font-size: 1.3em;
-}
+    }
+
 .note{
   padding: 15px;
   width: 25%;
@@ -43,6 +43,9 @@ p{
 .note a:hover{
     text-decoration: line-through;
     color: darkgrey;
+}
+
+
 }
 
 li{
@@ -124,3 +127,5 @@ input:invalid {
 input:focus:invalid {
   box-shadow: none;
 }
+
+

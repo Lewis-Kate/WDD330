@@ -29,7 +29,7 @@ function updateResults(data) {
             let year = data.Search[i].Year;
             let imdbID = data.Search[i].imdbID;
 			resultList.append("<div class='title imgContainer'><a href='http://www.imdb.com/title/" + imdbID
- + "' target='_blank'/'><img class='poster' src='" + poster + "' alt='" + title + year + "'><p class='titleText'>" + title +"<br>"+ year + "</p></a></div>");
+ + "' target='_blank'/'><img class='poster' src='" + poster + "' alt='" + title + "'><p class='titleText'>" + title +"<br>"+ year + "</p></a></div>");
 		} 
 	} else {
 			let resultList = $("#dataResults");
